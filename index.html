@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Юлия Остров | Стилист-Психолог. Закрытый клуб имиджа</title>
-    <meta name="description" content="Закрытый онлайн-клуб имиджа от стилиста-психолога Юлии Остров. Стилист на связи, нетворкинг, мастер-майнды. 115 ₽/день.">
+    <meta name="description" content="Закрытый онлайн-клуб имиджа от стилиста-психолога Юлии Остров. Стилист на связи, нетворкинг, мастер-майнды.">
     <meta property="og:title" content="Юлия Остров | Закрытый клуб имиджа">
-    <meta property="og:description" content="Стилист-психолог на связи + нетворкинг. 115 ₽/день.">
+    <meta property="og:description" content="Стилист-психолог на связи + нетворкинг.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://viktorcvp.github.io/yulia/">
     <meta property="og:image" content="https://via.placeholder.com/1200x630/e5e5e5/333333?text=JULIA+OSTROV">
@@ -70,14 +70,13 @@
         </div>
     </section>
 
-    <!-- БЛОК БОЛЕЙ (узнавание) -->
+    <!-- БЛОК БОЛЕЙ -->
     <section id="pains" class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4">
             <h2 class="text-4xl serif text-center mb-4">Узнаёте себя?</h2>
             <p class="text-center text-gray-500 mb-16 font-light">Выберите свой сценарий</p>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Сегмент 1: Частные клиенты -->
                 <div class="p-8 border border-gray-100 hover:shadow-lg transition duration-300">
                     <h3 class="text-2xl serif mb-6">Для себя</h3>
                     <ul class="space-y-3 text-sm text-gray-600 leading-relaxed">
@@ -90,7 +89,6 @@
                     </ul>
                 </div>
 
-                <!-- Сегмент 2: Эксперты/сценический образ -->
                 <div class="p-8 border border-gray-100 hover:shadow-lg transition duration-300">
                     <h3 class="text-2xl serif mb-6">Для экспертов</h3>
                     <ul class="space-y-3 text-sm text-gray-600 leading-relaxed">
@@ -100,11 +98,10 @@
                         <li>• Потеря клиентов из-за непоследовательного имиджа</li>
                         <li>• Запутанность в стиле для съёмок</li>
                         <li>• «Как выглядеть профессионально в сторис»</li>
-                        <li>• Потребность в капсуле, которая экономит время и повышает конверсию</li>
+                        <li>• Потребность в капсуле, которая экономит время</li>
                     </ul>
                 </div>
 
-                <!-- Сегмент 3: Клуб/подписка -->
                 <div class="p-8 border border-gray-100 hover:shadow-lg transition duration-300">
                     <h3 class="text-2xl serif mb-6">Для тех, кто хочет поддержки</h3>
                     <ul class="space-y-3 text-sm text-gray-600 leading-relaxed">
@@ -162,7 +159,7 @@
         </div>
     </section>
 
-    <!-- ОБО МНЕ (кратко) -->
+    <!-- ОБО МНЕ -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-3xl mx-auto px-4 text-center">
             <h2 class="text-4xl serif mb-8">Обо мне</h2>
@@ -213,17 +210,17 @@
                     const messageText = subject + '\nИмя: ' + name + '\nКонтакт: ' + phone;
                     
                     navigator.clipboard.writeText(messageText).then(() => {
-                        window.open('https://vk.me/obartstyle', '_blank');
+                        // ЗДЕСЬ ИЗМЕНЕНА ССЫЛКА НА proart_style
+                        window.open('https://vk.me/proart_style', '_blank');
                         this.submitted = true;
                     }).catch(() => {
-                        window.open('https://vk.me/obartstyle', '_blank');
+                        window.open('https://vk.me/proart_style', '_blank');
                         this.submitted = true;
                     });
                 } 
             }" class="space-y-6">
                 
                 <form @submit.prevent="handleSubmit()" class="space-y-6">
-                    <!-- Выбор типа заявки -->
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-gray-500 mb-3">Что вас интересует?</label>
                         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -274,13 +271,12 @@
                     <button type="submit" class="soft-btn w-full py-4 text-sm uppercase tracking-widest mt-4" x-show="!submitted">Отправить заявку</button>
                 </form>
 
-                <!-- Сообщение после отправки -->
                 <div x-show="submitted" x-cloak class="mt-6 p-6 bg-green-50 border-2 border-green-300 rounded-lg">
                     <div class="flex items-center mb-4">
                         <svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        <h3 class="text-lg font-bold text-green-800">✓ Диалог с Юлией открыт!</h3>
+                        <h3 class="text-lg font-bold text-green-800">✓ Диалог открыт!</h3>
                     </div>
                     <p class="text-gray-700 mb-4">Текст заявки скопирован. Вставьте его в сообщение (Ctrl+V).</p>
                     <div class="bg-white p-4 rounded border-2 border-gray-300">
@@ -298,7 +294,7 @@
                 <p class="text-sm text-gray-500 mb-2 uppercase font-bold">Или свяжитесь напрямую:</p>
                 <p class="text-lg font-bold mb-1">+7 (928) 166-13-90</p>
                 <p class="text-lg font-bold mb-1">Ростов-на-Дону, ул. Пацаева 16</p>
-                <p class="text-lg font-bold">Сообщество ВК: vk.ru/obartstyle</p>
+                <p class="text-lg font-bold">Написать в сообщения: <a href="https://vk.me/proart_style" class="underline">vk.me/proart_style</a></p>
             </div>
         </div>
     </section>
@@ -316,7 +312,6 @@
             setTimeout(() => {
                 const radios = document.querySelectorAll('input[name="cta"]');
                 radios.forEach(r => { if (r.value === type) r.checked = true; });
-                // Alpine реактивно обновит ctaType через x-model
                 const event = new Event('change');
                 radios.forEach(r => { if (r.value === type) r.dispatchEvent(event); });
             }, 100);
