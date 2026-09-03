@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & OG -->
+    <title>Юлия Остров | Стилист-Психолог. Гармония образа и состояния</title>
+    <meta name="description" content="Стилист-психолог Юлия Остров. Помогаю раскрыть внутреннюю силу через внешний образ. Разбор гардероба, шопинг-сопровождение, психология стиля.">
+    <meta property="og:title" content="Юлия Остров | Стилист-Психолог">
+    <meta property="og:description" content="Ваш стиль — это продолжение вашей личности. Найдем гармонию вместе.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viktorcvp.github.io/julia_site/"> 
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/e5e5e5/333333?text=JULIA+OSTROV"> 
+
+    <!-- Твой стек: Tailwind CSS + Alpine.js -->
+    <script src="https://cdn.tailwindcss.com?safe=true"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
+        
+        /* Шрифты для эстетики */
+        body { font-family: 'Inter', sans-serif; background: #fafafa; color: #333; }
+        h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
+        
+        /* Мягкий стиль */
+        .soft-btn { background: #333; color: #fff; border: 1px solid #333; transition: all 0.3s; letter-spacing: 1px; }
+        .soft-btn:hover { background: #fff; color: #333; }
+        .input-soft { width: 100%; padding: 1rem; border: 1px solid #ccc; background: #fff; font-size: 1rem; outline: none; transition: border 0.3s; }
+        .input-soft:focus { border-color: #333; }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Навигация -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-5xl mx-auto px-4 h-20 flex justify-between items-center">
+            <a href="#" class="text-2xl serif font-semibold tracking-wide">JULIA OSTROV</a>
+            <div class="hidden sm:flex gap-8 text-xs uppercase tracking-widest font-medium text-gray-500">
+                <a href="#about" class="hover:text-black transition">Обо мне</a>
+                <a href="#services" class="hover:text-black transition">Услуги</a>
+                <a href="#philosophy" class="hover:text-black transition">Философия</a>
+                <a href="#contact" class="hover:text-black transition">Запись</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <section class="pt-40 pb-20 max-w-5xl mx-auto px-4 text-center">
+        <h1 class="text-5xl md:text-7xl serif font-normal leading-tight mb-6 italic">
+            Стиль начинается <br>не с одежды, а с состояния
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 font-light">
+            Стилист-психолог. Помогаю женщинам обрести уверенность, раскрыть женственность и создать гардероб, который отражает их истинное «Я».
+        </p>
+        <a href="#contact" class="soft-btn inline-block px-10 py-4 text-sm uppercase tracking-widest">Записаться на разбор</a>
+    </section>
+
+    <!-- Обо мне (с местом под фото) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <!-- Заглушка под фото -->
+            <div class="aspect-[3/4] bg-gray-200 flex items-center justify-center text-gray-400 uppercase tracking-widest text-sm">
+                [Фото Юлии]
+            </div>
+            
+            <div class="space-y-6">
+                <h2 class="text-4xl serif">Обо мне</h2>
+                <p class="text-gray-600 leading-relaxed font-light">
+                    Меня зовут Юлия Остров. Я объединяю два мира: внешнюю эстетику и внутреннюю психологию. 
+                </p>
+                <p class="text-gray-600 leading-relaxed font-light">
+                    Часто мы покупаем красивые вещи, но чувствуем себя в них «не собой». Или наоборот — удобная одежда не дает ощущения праздника. Моя задача — найти тот баланс, когда зеркало отражает вашу душу, а не просто модные тренды.
+                </p>
+                <p class="text-gray-600 leading-relaxed font-light">
+                    Работаю онлайн и офлайн. Создаю капсулы, провожу ревизию и помогаю пережить трансформации через новый образ.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="py-20 max-w-5xl mx-auto px-4">
+        <h2 class="text-4xl serif text-center mb-16">Чем я могу помочь</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 border border-gray-100 hover:shadow-lg transition duration-300">
+                <h3 class="text-2xl serif mb-4">Разбор гардероба</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    Анализ ваших вещей. Убираем лишнее, собираем новые комплекты из того, что есть. Понимаем, чего не хватает для целостности.
+                </p>
+            </div>
+            <div class="bg-white p-8 border border-gray-100 hover:shadow-lg transition duration-300">
+                <h3 class="text-2xl serif mb-4">Шопинг-сопровождение</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    Маршрут по магазинам с четким планом. Только то, что подходит вам по типу фигуры, цветотипу и образу жизни. Без импульсивных покупок.
+                </p>
+            </div>
+            <div class="bg-white p-8 border border-gray-100 hover:shadow-lg transition duration-300">
+                <h3 class="text-2xl serif mb-4">Психология стиля</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    Работа с установками («мне нельзя яркое», «я должна носить только черное»). Снимаем блоки, которые мешают вам сиять.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Философия -->
+    <section id="philosophy" class="py-20 bg-[#f4f4f4]">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-4xl serif mb-8">Моя философия</h2>
+            <p class="text-2xl serif italic mb-8">«Одежда — это первый язык, на котором вы говорите с миром, еще до того, как откроете рот.»</p>
+            <p class="text-gray-600 font-light leading-relaxed">
+                Я не учу следовать моде слепо. Я учу слышать себя. Когда внутренний стержень крепкий, одежда становится лишь приятным дополнением, а не броней или маской.
+            </p>
+        </div>
+    </section>
+
+    <!-- Форма записи (Alpine.js + Telegram) -->
+    <section id="contact" class="py-20 max-w-5xl mx-auto px-4">
+        <div class="bg-white p-8 md:p-16 max-w-2xl mx-auto shadow-sm border border-gray-100">
+            <h2 class="text-3xl serif text-center mb-4">Начнем преображение?</h2>
+            <p class="text-center text-gray-500 mb-10 font-light">Оставьте заявку, и я свяжусь с вами для обсуждения деталей.</p>
+
+            <div x-data="{ submitted: false, errors: {}, 
+                handleSubmit() { 
+                    const f = this.$root; 
+                    const name = f.querySelector('[name=name]').value.trim(); 
+                    const phone = f.querySelector('[name=phone]').value.trim(); 
+                    const consent = f.querySelector('[name=consent]').checked; 
+                    
+                    this.errors = {}; 
+                    if (name.length < 2) this.errors.name = 'Укажите имя'; 
+                    if (phone.length < 5) this.errors.phone = 'Укажите контакт'; 
+                    if (!consent) this.errors.consent = 'Необходимо согласие'; 
+                    
+                    if (Object.keys(this.errors).length) return; 
+                    
+                    // Ссылка на ЕЁ телеграм (замени на реальный ник Юли)
+                    const text = 'Заявка на стиль%0AИмя: ' + encodeURIComponent(name) + '%0AКонтакт: ' + encodeURIComponent(phone); 
+                    window.open('https://t.me/YOUR_TG_USERNAME?text=' + text, '_blank'); 
+                    this.submitted = true; 
+                } 
+            }">
+                
+                <form @submit.prevent="handleSubmit()" class="space-y-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Ваше имя</label>
+                        <input type="text" name="name" class="input-soft" placeholder="Как к вам обращаться?" required :class="errors.name ? '!border-red-500' : ''">
+                        <p x-show="errors.name" x-text="errors.name" class="text-red-500 text-xs mt-1"></p>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-widest text-gray-500 mb-2">Телефон / Telegram</label>
+                        <input type="text" name="phone" class="input-soft" placeholder="+7 (___) ___-__-__" required :class="errors.phone ? '!border-red-500' : ''">
+                        <p x-show="errors.phone" x-text="errors.phone" class="text-red-500 text-xs mt-1"></p>
+                    </div>
+
+                    <!-- ГАЛОЧКА 1: Политика -->
+                    <div>
+                        <label class="flex items-start gap-3 cursor-pointer text-xs text-gray-500">
+                            <input type="checkbox" name="consent" required class="mt-1 w-4 h-4 accent-black">
+                            <span>
+                                Я даю согласие на обработку моих 
+                                <a href="privacy.html" target="_blank" class="underline text-black">персональных данных</a>.
+                            </span>
+                        </label>
+                        <p x-show="errors.consent" x-text="errors.consent" class="text-red-500 text-xs mt-1"></p>
+                    </div>
+
+                    <button type="submit" class="soft-btn w-full py-4 text-sm uppercase tracking-widest mt-4" x-show="!submitted">Отправить заявку</button>
+                    
+                    <div x-show="submitted" class="text-center py-4 text-green-700 font-medium">✓ Заявка сформирована! Переход в Telegram...</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-12 border-t border-gray-200 text-center bg-white">
+        <p class="text-xs text-gray-400 uppercase tracking-widest mb-4">© 2026 Julia Ostrov. Style & Psychology.</p>
+        <div class="flex justify-center gap-6 text-xs font-medium uppercase tracking-wider mb-4">
+            <a href="privacy.html" target="_blank" class="hover:text-black transition text-gray-500">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+</body>
+</html>
